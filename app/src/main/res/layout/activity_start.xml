@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/start_background">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:maxLength="7"
+        android:textColor="@color/colorGreen"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="Start"
+        android:typeface="monospace"
+        android:textSize="20dp"
+        android:background="@drawable/button_start"
+        android:onClick="startGame"
+        android:textColor="#17FF17"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Rules"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace"
+        android:textSize="20dp"
+        android:onClick="rule"
+        android:background="@drawable/button_start"
+        android:textColor="#F2FF38"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Exit"
+        android:onClick="exit"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:typeface="monospace"
+        android:textSize="20dp"
+        android:background="@drawable/button_start"
+        android:textColor="#FF0D35" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="Developed by @akgarhwal"/>
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
