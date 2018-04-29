@@ -46,11 +46,11 @@ Markov Model from Dictionary :-
 <table>
  <th>Current State</th>
  <th>Next State</th>
- <tr> <td>abc</td>
-     <td>def</td>
+ <tr> <td>the</td>
+     <td>{'r':1, 'i':1}</td>
  </tr>
- <tr> <td>abc</td>
-     <td>def</td>
+ <tr> <td>her</td>
+     <td>{'e':1}</td>
  </tr>
  <tr> <td>abc</td>
      <td>def</td>
@@ -77,6 +77,11 @@ Order of Markov model is 3, which means next character wil be decided from last 
   </ul>
   <h5>How Trie look like :- </h5>
   <img src="tries.gif">
+  
+  
+  <h3>Lets play :- </h3>
+  <h5>Example 1 :- </h5>
+  
   
   
  
