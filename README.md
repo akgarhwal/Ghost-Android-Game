@@ -49,8 +49,11 @@ Markov Model from Dictionary :-
      <td>def</td>
  </tr>
  <tr> <td>abc</td>
-     <td>def</td>
+     <td>{d, e, f}</td>
  </tr>
 </table>
 
-<bold>Ghost will use markov model to predict next char of word fragment.</bold>
+<h5>Ghost will use markov model to predict next char of word fragment.</h5>
+Order of Markov model is 3, which means next character wil be decided from last 3 character.
+
+<h2>How to check current word fragment is valid or complete :- </h2>
