@@ -32,7 +32,14 @@ JRE : 1.8 <br>
 
 <h2>Ghost Strategy :-</h2>
 <h5>A Sample Dictionary :-</h5>
-
+<ol>
+<li>there</li>
+<li>any</li>
+<li>answer</li>
+<li>anyone</li>
+<li>their</li>
+<li>bye</li>
+</ol>
 
 
 Markov Model from Dictionary :- 
@@ -62,5 +69,10 @@ Order of Markov model is 3, which means next character wil be decided from last 
     <li>Sort Dictionary lexicographically</li>
     <li>Search for current word in sorted dictionary using Binary search.</li>
     <li>Complexity : O( log<sub>2</sub>(N)) where N is number of word in dictionary.</li>
-  
   </ul>
+<h4> 2. Trie :- </h4>
+  <ul>
+    <li>The trie is a tree where each vertex represents a single word or a prefix.</li>
+    <li>The tries can insert and find strings in O(L) time (where L represent the length of a single word). This is much faster than set , but is it a bit faster than a hash table.</li>
+  </ul>
+ 
