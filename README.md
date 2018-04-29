@@ -10,8 +10,7 @@ JRE : 1.8 <br>
 <h2>Screenshot of App :</h2>
 
 <p float="left">
-<img src="ghost.gif" width="250"/>
-/* <img src="ghost.gif" width="250"/> */
+<img src="ghost.gif"/>
 </p>
 
 <h3>Game Rules: </h3>
