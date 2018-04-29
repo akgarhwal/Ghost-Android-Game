@@ -19,12 +19,13 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
-import static com.example.akgarhwal.ghost.GhostActivity.gameStatus;
 
+import static com.example.akgarhwal.ghost.GhostActivity.gameStatus;
+import static com.example.akgarhwal.ghost.GhostActivity.word_meaning;
 
 public class Meaning {
 
-    public Meaning(String word){
+    public void updateMeaning(String word) {
         new CallbackTask().execute(dictionaryEntries(word));
     }
 
@@ -69,7 +70,9 @@ public class Meaning {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            Log.d("Tag", result);
+            Log.d("Tag1", result);
+            System.out.print(result);
+
             String meaning = "Meaning not Found.";
             String text = gameStatus.getText().toString();
             try {
@@ -82,6 +85,7 @@ public class Meaning {
                 Log.d("Tag", "onPostExecute: " + text.substring(text.length() - 15, text.length()));
                 if (text.substring(text.length() - 15, text.length()).equals("getting Meaning")) {
                     gameStatus.setText(text.substring(0, text.length() - 15) + meaning.trim());
+                    word_meaning = meaning.trim();
                 }
 
             }
@@ -89,6 +93,7 @@ public class Meaning {
                 try {
                     if (text.substring(text.length() - 15, text.length()).equals("getting Meaning")) {
                         gameStatus.setText(text.substring(0, text.length() - 15) + meaning);
+                        word_meaning = null;
                     }
                 }
                 catch (Exception exce){

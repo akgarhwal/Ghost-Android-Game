@@ -2,12 +2,16 @@ package com.example.akgarhwal.ghost;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class RuleActivity extends Activity {
+public class RuleActivity extends AppCompatActivity {
 
     String[] rules = {"Ghost is a word game in which players take turns adding letters to a growing word fragment, " +
             "trying not to be the one to complete a valid word.",
@@ -22,6 +26,8 @@ public class RuleActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rule);
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#F50057")));
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.list_text_view, rules);
 
