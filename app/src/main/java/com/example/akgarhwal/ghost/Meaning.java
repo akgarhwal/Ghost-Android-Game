@@ -39,8 +39,8 @@ public class Meaning {
         @Override
         protected String doInBackground(String... params) {
 
-            final String app_id = "6db6ab1b";
-            final String app_key = "d1f7cf23ea0072314a72ab74767518b6";
+            final String app_id = "XXXXXXX";
+            final String app_key = "XXXXXXXXXXXXXXXXXXXXXXXX";
             try {
 
                 Log.d("Tag", "doInBackground: ");

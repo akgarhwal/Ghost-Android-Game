@@ -20,7 +20,6 @@
             android:text="Player"
             android:textSize="25dp"
             android:gravity="center"
-            android:fontFamily="serif-monospace"
             android:maxLength="7"
             android:textColor="#191819"
             android:background="@android:color/transparent"
