@@ -14,7 +14,7 @@ JRE : 1.8 <br>
 <img src="ghost.gif" width="250"/>
 </p>
 
-<h3>Game Rules</h3> :
+<h3>Game Rules: </h3>
 <ol>
   <li>Ghost is a word game in which players take turns adding letters to a growing word fragment, trying not to be the one to complete a valid word.</li>
   <li>Each incomplete wordmust be the beginning of an actual word, and  minmum length of a word that counts is 4 letters.</li>
@@ -29,3 +29,5 @@ JRE : 1.8 <br>
     </ul>
   </li>     
 </ol>
+
+<h2>Ghoost Strategy :-</h2>
