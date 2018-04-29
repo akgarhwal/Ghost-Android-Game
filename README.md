@@ -11,7 +11,7 @@ JRE : 1.8 <br>
 
 <p float="left">
 <img src="ghost.gif" width="250"/>
-<img src="ghost.gif" width="250"/>
+/* <img src="ghost.gif" width="250"/> */
 </p>
 
 <h3>Game Rules: </h3>
