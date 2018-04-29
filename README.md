@@ -57,3 +57,10 @@ Markov Model from Dictionary :-
 Order of Markov model is 3, which means next character wil be decided from last 3 character.
 
 <h2>How to check current word fragment is valid or complete :- </h2>
+<h4> 1. Binary Search :- </h4>
+  <ul>
+    <li>Sort Dictionary lexicographically</li>
+    <li>Search for current word in sorted dictionary using Binary search.</li>
+    <li>Complexity : O( log<sub>2</sub>(N)) where N is number of word in dictionary.</li>
+  
+  </ul>
