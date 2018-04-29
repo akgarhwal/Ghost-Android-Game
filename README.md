@@ -30,4 +30,27 @@ JRE : 1.8 <br>
   </li>     
 </ol>
 
-<h2>Ghoost Strategy :-</h2>
+<h2>Ghost Strategy :-</h2>
+<h5>A Sample Dictionary :-</h5>
+
+
+
+Markov Model from Dictionary :- 
+<table>
+ <th>Current State</th>
+ <th>Next State</th>
+ <tr> <td>abc</td>
+     <td>def</td>
+ </tr>
+ <tr> <td>abc</td>
+     <td>def</td>
+ </tr>
+ <tr> <td>abc</td>
+     <td>def</td>
+ </tr>
+ <tr> <td>abc</td>
+     <td>def</td>
+ </tr>
+</table>
+
+<bold>Ghost will use markov model to predict next char of word fragment.</bold>
