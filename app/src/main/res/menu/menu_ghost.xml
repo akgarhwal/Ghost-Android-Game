@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.akgarhwal.ghost.GhostActivity" >
+
+
+    <item android:id="@+id/speak_button"
+        android:title="Speak"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:icon="@mipmap/speak_icon" />
+
+    <item android:id="@+id/home_button"
+        android:title="Home"
+        app:showAsAction="always"
+        android:orderInCategory="200"
+        android:icon="@mipmap/home_icon" />
+
+</menu>
