@@ -7,6 +7,9 @@ Android Studio 2.3.3 <br>
 Build : 162.4069837 <br>
 JRE : 1.8 <br>
 
-screenshot of App :
+Screenshot of App :
 
 <img src="ghost.gif"/>
+
+
+<END>
