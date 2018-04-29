@@ -10,9 +10,8 @@ JRE : 1.8 <br>
 Screenshot of App :
 
 <p float="left">
-<img src="ghost.gif" width="100"/>
-<img src="ghost.gif" width="100"/>
-
+<img src="ghost.gif" width="400"/>
+<img src="ghost.gif" width="400"/>
 </p>
 
 
