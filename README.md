@@ -45,18 +45,33 @@ JRE : 1.8 <br>
 Markov Model from Dictionary :- 
 <table>
  <th>Current State</th>
- <th>Next State</th>
+ <th>Possible next character</th>
  <tr> <td>the</td>
      <td>{'r':1, 'i':1}</td>
  </tr>
  <tr> <td>her</td>
      <td>{'e':1}</td>
  </tr>
- <tr> <td>abc</td>
-     <td>def</td>
+ <tr> <td>ans</td>
+     <td>{'w':1}</td>
  </tr>
- <tr> <td>abc</td>
-     <td>{d, e, f}</td>
+  <tr> <td>nsw</td>
+     <td>{'e':1}</td>
+ </tr>
+  <tr> <td>swe</td>
+     <td>{'r':1}</td>
+ </tr>
+  <tr> <td>any</td>
+     <td>{'o':1}</td>
+ </tr>
+  <tr> <td>nyo</td>
+     <td>{'n':1}</td>
+ </tr>
+  <tr> <td>yon</td>
+     <td>{'e':1}</td>
+ </tr>
+  <tr> <td>hei</td>
+     <td>{'r':1}</td>
  </tr>
 </table>
 
@@ -77,11 +92,6 @@ Order of Markov model is 3, which means next character wil be decided from last 
   </ul>
   <h5>How Trie look like :- </h5>
   <img src="tries.gif">
-  
-  
-  <h3>Lets play :- </h3>
-  <h5>Example 1 :- </h5>
-  
   
   
  
