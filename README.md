@@ -98,8 +98,9 @@ Order of Markov model is 3, which means next character wil be decided from last 
     <li>Anyhow</li>
     <li>answer</li>
     <li>Greek</li>
-  <li>Their</li>
-  <li>there</li>
+    <li>Their</li>
+    <li>there</li>
+    <li>the</li>
     </ul>
     <img src="Trie.PNG">
     
