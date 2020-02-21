@@ -90,7 +90,7 @@ Order of Markov model is 3, which means next character wil be decided from last 
     <li>The tries can insert and find strings in O(L) time (where L represent the length of a single word). This is much faster than Binary search.</li>
   </ul>
   <h5>How Trie look like :- </h5>
-  <img src="tries.gif">
+  <img src="Trie.PNG">
   
   
  
