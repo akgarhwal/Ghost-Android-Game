@@ -1,6 +1,6 @@
 # Ghost-Android-Game
 
-</b>"Ghost is a word game in which players take turns to add letters to an incomplete word. The only constraint is to maintain a string which is a prefix of a valid English word. The player who forces his opponent to create a meaningful word wins the game. A dictionary of 60K+ words were implemented using Trie, which served quick lookups for optimized decision checks during the gameplay. The bot moves were implemented using order-3 Markov model."</b>
+</b>[Ghost](https://en.wikipedia.org/wiki/Ghost_(game)) is a word game in which players take turns to add letters to an incomplete word. The only constraint is to maintain a string which is a prefix of a valid English word. The player who forces his opponent to create a meaningful word wins the game. A dictionary of 60K+ words were implemented using Trie, which served quick lookups for optimized decision checks during the gameplay. The bot moves were implemented using order-3 Markov model.</b>
 
 
 System Details : <br>
