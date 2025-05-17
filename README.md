@@ -1,109 +1,59 @@
 # Ghost-Android-Game
 
-</b>[Ghost](https://en.wikipedia.org/wiki/Ghost_(game)) is a word game in which players take turns to add letters to an incomplete word. The only constraint is to maintain a string which is a prefix of a valid English word. The player who forces his opponent to create a meaningful word wins the game. A dictionary of 60K+ words were implemented using Trie, which served quick lookups for optimized decision checks during the gameplay. The bot moves were implemented using order-3 Markov model.</b>
+[Ghost](https://en.wikipedia.org/wiki/Ghost_(game)) is a classic word game where players take turns adding letters to a growing word fragment, aiming not to complete a valid word. This Android implementation offers single-player modes, providing an engaging experience for word enthusiasts.
+
+## Features
+
+* **Single-Player Mode**: Challenge an AI opponent powered by a third-order Markov model for intelligent and unpredictable gameplay.
+
+* **Extensive Dictionary**: Utilizes a comprehensive dictionary of over 60,000 words implemented via a Trie data structure for efficient and accurate word validation.
+
+* **User-Friendly Interface**: Enjoy a clean and intuitive interface designed for seamless gameplay.
+
+## Screenshots
+
+![oaicite:22](Trie.PNG)
+
+*Visualization of the Trie structure used for word validation.*
+
+![oaicite:30](ghost.gif)
+
+*Smooth and engaging gameplay experience.*
+
+## How to Play
+
+1. **Game Start**: The game begins with an empty word fragment.
+
+2. **Taking Turns**: Players alternate turns, each adding a single letter to the fragment.
+
+3. **Objective**: Avoid completing a valid word. The player who adds a letter that completes a valid word loses the round.
+
+4. **Challenging**: If a player suspects that the current fragment cannot lead to a valid word, they can challenge their opponent.
+
+5. **Winning the Game**: The first player to force their opponent into completing a word or being unable to continue forms wins the game.
+
+## Technical Details
+
+* **Dictionary Implementation**: The game employs a Trie data structure to store and retrieve over 60,000 words efficiently, ensuring quick lookups during gameplay.
+
+* **AI Opponent**: The single-player mode features an AI opponent that utilizes a third-order Markov model to make intelligent decisions, providing a challenging experience for players.
+
+## Installation
+
+To install and run the game on your Android device:
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/akgarhwal/Ghost-Android-Game.git
+   ```
 
 
-System Details : <br>
-Android Studio 2.3.3 <br>
-Build : 162.4069837 <br>
-JRE : 1.8 <br>
 
-<h2>Screenshot of App :</h2>
+2. **Open in Android Studio**: Import the project into Android Studio.
 
-<p float="left">
-<img src="ghost.gif"/>
-</p>
+3. **Build and Run**: Build the project and run it on an emulator or physical device running Android 5.0 (Lollipop) or higher.
 
-<h3>Game Rules: </h3>
-<ol>
-  <li>Ghost is a word game in which players take turns adding letters to a growing word fragment, trying not to be the one to complete a valid word.</li>
-  <li>Each incomplete wordmust be the beginning of an actual word, and  minmum length of a word that counts is 4 letters.</li>
-  <li>The player who completes a word lose the round.</li>
-  <li>A player is chosen at random to start the game, and begins by naming any letter of the alphabet.</li>
-  <li>Players then take turns to add letters to this fragment, with the aim being to avoid completing an actual word.</li>
-  <li>The player whose turn it is may :- 
-    <ul>
-    <li> Instead of adding a letter, challenge the previous player to prove that the current fragment is actually the beginning of a word.</li>
-    <li> If the challenged player can name such a word, the challenger loses the round; otherwise the challenged player loses the round.</li>
-    <li> If a player bluffs, or completes a word without other players noticing, then play continues.</li>
-    </ul>
-  </li>     
-</ol>
+---
 
-<h2>Ghost Strategy :-</h2>
-<h5>A Sample Dictionary :-</h5>
-<ol>
-<li>there</li>
-<li>any</li>
-<li>answer</li>
-<li>anyone</li>
-<li>their</li>
-<li>bye</li>
-</ol>
-
-
-Markov Model from Dictionary :- 
-<table>
- <th>Current State</th>
- <th>Possible next character</th>
- <tr> <td>the</td>
-     <td>{'r':1, 'i':1}</td>
- </tr>
- <tr> <td>her</td>
-     <td>{'e':1}</td>
- </tr>
- <tr> <td>ans</td>
-     <td>{'w':1}</td>
- </tr>
-  <tr> <td>nsw</td>
-     <td>{'e':1}</td>
- </tr>
-  <tr> <td>swe</td>
-     <td>{'r':1}</td>
- </tr>
-  <tr> <td>any</td>
-     <td>{'o':1}</td>
- </tr>
-  <tr> <td>nyo</td>
-     <td>{'n':1}</td>
- </tr>
-  <tr> <td>yon</td>
-     <td>{'e':1}</td>
- </tr>
-  <tr> <td>hei</td>
-     <td>{'r':1}</td>
- </tr>
-</table>
-
-<h5>Ghost will use markov model to predict next char of word fragment.</h5>
-Order of Markov model is 3, which means next character wil be decided from last 3 character.
-
-<h2>How to check current word fragment is valid or complete :- </h2>
-<h4> 1. Binary Search :- </h4>
-  <ul>
-    <li>Sort Dictionary lexicographically</li>
-    <li>Search for current word in sorted dictionary using Binary search.</li>
-    <li>Complexity : O( log<sub>2</sub>(N)) where N is number of word in dictionary.</li>
-  </ul>
-<h4> 2. Trie :- </h4>
-  <ul>
-    <li>The trie is a tree where each vertex represents a single word or a prefix.</li>
-    <li>The tries can insert and find strings in O(L) time (where L represent the length of a single word). This is much faster than Binary search.</li>
-  </ul>
-  
-  <h5>How Trie look like :- </h5>
-  <p>LIst of words:</p>
-  <ul>
-    <li>Great</li>
-    <li>Any</li>
-    <li>Anyhow</li>
-    <li>answer</li>
-    <li>Greek</li>
-    <li>Their</li>
-    <li>there</li>
-    <li>the</li>
-    </ul>
-    <img src="Trie.PNG">
-    
-  
- 
+*Enhance your vocabulary and strategic thinking with the Ghost-Android-Game. Challenge yourself against the AI or compete with friends for endless fun!*
